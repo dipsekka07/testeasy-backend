@@ -1,0 +1,23 @@
+service: aws-python-sample
+
+provider:
+  name: aws
+  runtime: python3.8
+  environment:
+    AWS_ENV: Dev
+    AWS_DEFAULT_REGION: ap-southeast-1
+
+plugins:
+  - serverless-offline
+
+functions:
+  examiner:
+    handler: lambda_function.lambda_handler
+    events: 
+      - http:
+          method: ANY
+          path: /exams
+      - http:
+          method: ANY
+          path: /exams/{exam_id}
+      

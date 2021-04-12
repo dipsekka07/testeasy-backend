@@ -1,0 +1,24 @@
+{
+  "name": "testeasy-backend",
+  "version": "1.0.0",
+  "description": "Test Easy Local Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "local": "sls offline --noPrependStageInUrl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dipsekka07/testeasy-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dipsekka07/testeasy-backend/issues"
+  },
+  "homepage": "https://github.com/dipsekka07/testeasy-backend#readme",
+  "dependencies": {
+    "serverless": "^2.33.1",
+    "serverless-offline": "^6.9.0"
+  }
+}
